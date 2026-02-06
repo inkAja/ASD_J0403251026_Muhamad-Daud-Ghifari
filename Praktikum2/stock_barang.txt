@@ -1,0 +1,7 @@
+BRG001,Roti,20
+BRG002,AirMineral,15
+BRG003,TehBotol,25
+BRG004,KripikKentang,12
+BRG005,Kopi,9
+BRG006,Gorengan,5
+BRG007,Permen,52
