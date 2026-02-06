@@ -4,13 +4,13 @@
 #===================================================
 
 print("====Membuka file dalam satu string====")
-with open("data_mahasiswa.txt", "r",encoding="utf-8")  as file:
+with open("Praktikum1/data_mahasiswa.txt", "r",encoding="utf-8")  as file:
     isi_file = file.read()
 print(isi_file)    
 print("tipe data: ", type(isi_file))
 print("====Membuka file per baris====")
 jumlah_baris =0 #inisialisasi variabel untuk menghitung jumlah baris
-with open("data_mahasiswa.txt", "r",encoding="utf-8") as file:
+with open("Praktikum1/data_mahasiswa.txt", "r",encoding="utf-8") as file:
     for baris in file:
         jumlah_baris = jumlah_baris +1
         baris = baris.strip() #menghilangkan karakter baris baru
@@ -23,7 +23,7 @@ with open("data_mahasiswa.txt", "r",encoding="utf-8") as file:
 #===================================================
 #Parsing baris menjadi data satuan dan menampilkannya dalam bentuk kolom2 data
 
-with open("data_mahasiswa.txt", "r",encoding="utf-8") as file:
+with open("Praktikum1/data_mahasiswa.txt", "r",encoding="utf-8") as file:
     for baris in file:
         baris = baris.strip() #menghilangkan karakter baris baru
         nim,nama,nilai = baris.split(',') # Memecah data menjadi satuan dan simpan ke variabel
@@ -36,7 +36,7 @@ with open("data_mahasiswa.txt", "r",encoding="utf-8") as file:
 
 data_list = [] # inisialisasi variable
 
-with open("data_mahasiswa.txt", "r",encoding="utf-8") as file:
+with open("Praktikum1/data_mahasiswa.txt", "r",encoding="utf-8") as file:
     for baris in file:
         baris = baris.strip() #menghilangkan karakter baris baru
         nim,nama,nilai = baris.split(',') # Memecah data menjadi satuan dan simpan ke variabel
@@ -52,7 +52,7 @@ print("Jumlah record :", len(data_list) )
 #================================================================================
 data_dict = {} # inisialisasi variabel dictionary
 
-with open("data_mahasiswa.txt", "r",encoding="utf-8") as file:
+with open("Praktikum1/data_mahasiswa.txt", "r",encoding="utf-8") as file:
     for baris in file:
         baris = baris.strip() #menghilangkan karakter baris baru
         nim,nama,nilai = baris.split(',') # Memecah data menjadi satuan dan simpan ke variabel

@@ -4,7 +4,7 @@
 #======================================================================
 
 # Variabel menyimpan data file 
-nama_file = "data_mahasiswa.txt"
+nama_file = "Praktikum2/data_mahasiswa.txt"
 
 def baca_data(nama_file):
     data_dict = {} # inisialisasi data dictionary
@@ -42,7 +42,7 @@ def tampilkan_data(data_dict):
         nama = data_dict[nim]['nama']
         nilai = data_dict[nim]['nilai']
         print(f"{nim:<10} | {nama:<12} | {int(nilai):>5}")
-    print("\n")
+    print("")
 # tampilkan_data(buka_data) # memanggil fungsi untuk menampilkan data 
 
 #======================================================================
@@ -65,7 +65,7 @@ def cari_data(data_dict):
         print(f"Nilai   : {nilai}")
     else:
         print("Data tidak ditemukan, Pastikan NIM yang dimasukan benar")
-    print("\n")
+    print("")
 # Memanggil fungsi cari data
 # cari_data(buka_data)
 
@@ -94,7 +94,7 @@ def ubah_data(data_dict):
     data_dict[nim]["nilai"] = nilai_baru
 
     print(f"Update Berhasil. NIlai {nim} berubah dari {nilai_lama} menjadi {nilai_baru}")
-    print("\n")
+    print("")
 
 #memanggil fungsi ubah data
 # ubah_data(buka_data)
