@@ -40,7 +40,7 @@ class Node:
         else:
             self.data = data
 
-    def inorderTraversal(self, root):
+    def inorderTraversal(self,root):
         res = []
         if root:
             res = self.inorderTraversal(root.left)
@@ -52,15 +52,15 @@ class Node:
         res = []
         if root:
             res.append(root.data)
-            res = res + self.inorderTraversal(root.left)
-            res = res + self.inorderTraversal(root.right)
+            res = res + self.preorderTraversal(root.left)
+            res = res + self.preorderTraversal(root.right)
         return res
     
     def postorderTraversal(self, root):
         res = []
         if root:
-            res = self.inorderTraversal(root.left)
-            res = res + self.inorderTraversal(root.right)
+            res = self.postorderTraversal(root.left)
+            res = res + self.postorderTraversal(root.right)
             res.append(root.data)
         return res
     

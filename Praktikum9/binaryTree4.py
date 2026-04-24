@@ -13,13 +13,14 @@
 # subtree kanan.
 # ====================================================================
 
+
 class Node:
     def __init__(self, data):
-        self.left =None
-        self.right =None
-        self.data =data
+        self.left = None
+        self.right = None
+        self.data = data
 
-    def insert(self,data):
+    def insert(self, data):
         if self.data:
             if data < self.data:
                 if self.left is None:
@@ -33,6 +34,7 @@ class Node:
                     self.right.insert(data)
         else:
             self.data = data
+
     def printTree(self):
         if self.left:
             self.left.printTree()
@@ -49,7 +51,8 @@ class Node:
             res = res + self.preOrderTraversal(root.left)
             res = res + self.preOrderTraversal(root.right)
         return res
-    
+
+
 root = Node(27)
 root.insert(14)
 root.insert(35)
