@@ -26,7 +26,7 @@ def adjacency_matrix(V, edges):
     return mat
 
 
-def adjacency_list(V, edges):
+def adjacency_list(edges):
     # buat dictionary
     adj = {}
     for it in edges:
@@ -61,8 +61,6 @@ if __name__ == "__main__":
 
     # Adjacency List
     # Membuat hubungan antar kota yang sesuai dengan gambar
-    print("====================================================\n")
-    print("Representasi Rute jalan antar kota dalam bentuk List")
     edgesAdj = [
         ["Bekasi", "Depok"],
         ["Bekasi", "Karawang"],
@@ -73,7 +71,9 @@ if __name__ == "__main__":
         ["Subang", "Cirebon"],
         ["Purwakarta", "Cirebon"],
     ]
-    adj = adjacency_list(V, edgesAdj)
+    adj = adjacency_list(edgesAdj)
+    print("====================================================\n")
+    print("Representasi Rute jalan antar kota dalam bentuk List")
 
     for i in adj:
         print(f"{i} : {adj[i]}")
