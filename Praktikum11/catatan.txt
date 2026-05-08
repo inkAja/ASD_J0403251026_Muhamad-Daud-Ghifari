@@ -1,0 +1,5 @@
+Adjacency Matrix -> untuk edge/tetangga yang banyak (dense graph)
+
+Adjacency List -> untuk edge/tetangga yang sedikit (sparse graph) 
+
+graph besar = node/vertexnya banyak
